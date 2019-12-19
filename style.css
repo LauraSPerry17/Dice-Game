@@ -1,0 +1,22 @@
+body{
+    background-color:skyblue;
+}    
+h1{
+    color:white;
+    font-size:40px;
+}
+        
+h2{
+    color:black;
+    font-size:30px;
+}
+        
+h3{
+    color:black;
+    font-size:20px;
+}
+
+.jumbotron{
+    color:white;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/05/08/22/matrix-1799659__340.jpg");
+}

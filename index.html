@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Standard Navbar</title>
+    </head>
+    <body>
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>The Game Page!</h1>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebsiteLogo</a>
+            </div>
+        
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Rock, Paper, Scissors</h2>
+                    <p>
+                        Rock, Paper, Scissors is a game for two players typically played using the players' hands. The two players each make a fist with one hand and hold the other open, palm upward. Together, they tap their fists in their open palms once, twice, and on the third time form one of three items: a rock (by keeping the hand in a fist), a sheet of paper (by holding the hand flat, palm down), or a pair of scissors (by extending the first two fingers and holding them apart).
+                    </p>
+                    <label>Type rock, paper or scissors and click play</label><input type="text" id='userInput'><br>
+                    <button onclick= "playRPS()" class="btn btn-primary">Start</button>
+                    <p id='RPSOutput'></p>
+            </div>
+        
+            <div class="col-md-6">
+                <h2>Craps</h2>
+                    <p>
+                        The fundamental bet in craps is the pass line bet, which is a bet for the shooter to win. This bet must be at least the table minimum and at most the table maximum. If the come-out roll is 7 or 11, the bet wins. If the come-out roll is 2, 3 or 12, the bet loses (known as "crapping out").
+                    </p>
+                    <button onclick = "dice()" type = "button" class="btn btn-primary">Start</button>
+                    <p id='diceOutput'></p>
+            </div>
+        </div>    
+        <script src = 'dice.js'></script>
+        <script src = 'rps.js'></script>
+    </body>
+</html>
